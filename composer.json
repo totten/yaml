@@ -1,7 +1,7 @@
 {
-    "name": "symfony/yaml",
+    "name": "symfony/yaml-polyfill",
     "type": "library",
-    "description": "Symfony Yaml Component",
+    "description": "Symfony Yaml Polyfill",
     "keywords": [],
     "homepage": "https://symfony.com",
     "license": "MIT",
@@ -19,15 +19,10 @@
         "php": ">=5.3.9"
     },
     "autoload": {
-        "psr-4": { "Symfony\\Component\\Yaml\\": "" },
+        "psr-4": { "Symfony\\Polyfill\\Yaml\\": "" },
         "exclude-from-classmap": [
             "/Tests/"
         ]
     },
-    "minimum-stability": "dev",
-    "extra": {
-        "branch-alias": {
-            "dev-master": "2.8-dev"
-        }
-    }
+    "minimum-stability": "dev"
 }

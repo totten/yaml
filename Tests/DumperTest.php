@@ -9,11 +9,11 @@
  * file that was distributed with this source code.
  */
 
-namespace Symfony\Component\Yaml\Tests;
+namespace Symfony\Polyfill\Yaml\Tests;
 
 use PHPUnit\Framework\TestCase;
-use Symfony\Component\Yaml\Parser;
-use Symfony\Component\Yaml\Dumper;
+use Symfony\Polyfill\Yaml\Parser;
+use Symfony\Polyfill\Yaml\Dumper;
 
 class DumperTest extends TestCase
 {
@@ -181,7 +181,7 @@ EOF;
     {
         $dump = $this->dumper->dump(array('foo' => new A(), 'bar' => 1), 0, 0, false, true);
 
-        $this->assertEquals('{ foo: !php/object:O:30:"Symfony\Component\Yaml\Tests\A":1:{s:1:"a";s:3:"foo";}, bar: 1 }', $dump, '->dump() is able to dump objects');
+        $this->assertEquals('{ foo: !php/object:O:29:"Symfony\Polyfill\Yaml\Tests\A":1:{s:1:"a";s:3:"foo";}, bar: 1 }', $dump, '->dump() is able to dump objects');
     }
 
     public function testObjectSupportDisabledButNoExceptions()
@@ -192,7 +192,7 @@ EOF;
     }
 
     /**
-     * @expectedException \Symfony\Component\Yaml\Exception\DumpException
+     * @expectedException \Symfony\Polyfill\Yaml\Exception\DumpException
      */
     public function testObjectSupportDisabledWithExceptions()
     {

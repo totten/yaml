@@ -1,7 +1,7 @@
-Yaml Component
+Yaml Polyfill
 ==============
 
-The Yaml component loads and dumps YAML files.
+The Yaml polyfill loads and dumps YAML files.
 
 Resources
 ---------

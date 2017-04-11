@@ -9,10 +9,10 @@
  * file that was distributed with this source code.
  */
 
-namespace Symfony\Component\Yaml;
+namespace Symfony\Polyfill\Yaml;
 
-use Symfony\Component\Yaml\Exception\ParseException;
-use Symfony\Component\Yaml\Exception\DumpException;
+use Symfony\Polyfill\Yaml\Exception\ParseException;
+use Symfony\Polyfill\Yaml\Exception\DumpException;
 
 /**
  * Inline implements a YAML parser/dumper for the YAML inline syntax.

@@ -9,10 +9,10 @@
  * file that was distributed with this source code.
  */
 
-namespace Symfony\Component\Yaml\Tests;
+namespace Symfony\Polyfill\Yaml\Tests;
 
 use PHPUnit\Framework\TestCase;
-use Symfony\Component\Yaml\Exception\ParseException;
+use Symfony\Polyfill\Yaml\Exception\ParseException;
 
 class ParseExceptionTest extends TestCase
 {
